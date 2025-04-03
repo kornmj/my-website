@@ -8,37 +8,45 @@
     <style>
         /* สไตล์สำหรับ Body */
         body {
-            background-color: black; /* พื้นหลังสีดำ */
-            color: #ffffff; /* สีข้อความเป็นสีขาว */
-            font-family: Arial, sans-serif; /* ฟอนต์ Arial */
-            display: flex; /* จัดหน้าให้ใช้ Flexbox */
-            justify-content: center; /* จัดให้อยู่กึ่งกลางแนวนอน */
-            align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
-            height: 100vh; /* ความสูงเต็มหน้าจอ */
-            margin: 0; /* ไม่มีระยะขอบ */
+            background-color: black;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
 
         /* สไตล์สำหรับปุ่มลิงก์ */
         .link-button {
-            background-color: gray; /* สีพื้นหลังของปุ่ม */
-            color: white; /* สีตัวอักษรบนปุ่ม */
-            text-decoration: none; /* ลบเส้นใต้ลิงก์ */
-            padding: 15px 30px; /* ช่องว่างด้านในปุ่ม */
-            margin: 20px; /* ระยะห่างรอบปุ่ม */
-            border-radius: 8px; /* ขอบมน */
-            transition: background-color 0.3s; /* การเปลี่ยนสีเมื่อ Hover */
+            background-color: gray;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            margin: 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
         }
 
         /* สไตล์เมื่อวางเมาส์บนปุ่ม */
         .link-button:hover {
-            background-color: #1e90ff; /* สีพื้นหลังเมื่อ Hover */
+            background-color: #1e90ff;
+        }
+
+        /* สไตล์สำหรับรูปภาพ */
+        img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
         }
     </style>
 </head>
 
 <body>
-    <iframe src="dog.jpg" frameborder="0"></iframe>
-    <br>
-    <a href="index.html"class="link-button">Go to image cat</a>
+    <img src="dog.jpg" alt="Dog Image">
+    <a href="index.html" class="link-button">Go to image cat</a>
 </body>
+
 </html>
